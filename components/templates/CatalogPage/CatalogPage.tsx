@@ -65,8 +65,6 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
     loadBoilerParts()
   }, [filteredBoilerParts, isFilterInQuery])
 
-  console.log(boilerParts.rows)
-
   const loadBoilerParts = async () => {
     try {
       setSpinner(true)
